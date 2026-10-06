@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Productos | NICOLE FASHION</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="logo">
+
+<span class="logo-icon">✦</span>
+
+<div>
+<h1>NICOLE</h1>
+<p>FASHION</p>
+</div>
+
+</div>
+
+
+<nav class="navbar">
+
+<a href="index.html">Inicio</a>
+<a href="javascript.html">JavaScript</a>
+<a href="jquery.html">jQuery</a>
+<a href="json.html">JSON</a>
+<a href="hosting.html">Hosting</a>
+<a href="cuestionario.html">Cuestionario</a>
+<a href="productos.html" class="activo">Productos</a>
+<a href="contacto.html">Contacto</a>
+
+</nav>
+
+</header>
+
+
+<section class="llamada">
+
+<div>
+
+<p>NUEVA COLECCIÓN</p>
+
+<h2>NICOLE FASHION</h2>
+
+<p>
+Descubre prendas creadas para expresar tu estilo.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="destacados">
+
+<div class="titulo-seccion">
+
+<p>CATÁLOGO</p>
+
+<h2>Nuestra colección</h2>
+
+<!-- PRODUCTOS -->
+
+<div class="productos-preview">
+
+    <!-- PRODUCTO 1 -->
+    <article class="producto">
+
+        <div class="producto-imagen">
+            <img src="vestido 2.jpeg" alt="Vestido Elegante">
+            <span>VESTIDO</span>
+        </div>
+
+        <div class="producto-info">
+            <h3>Vestido Elegance</h3>
+
+            <p>
+                Vestido femenino elegante para ocasiones especiales.
+            </p>
+
+            <strong>$90.00</strong>
+
+            <br><br>
+
+            <button
+                class="btn-principal"
+                onclick="agregarProducto('Vestido Elegance', 90.00)">
+                Agregar
+            </button>
+        </div>
+
+    </article>
+
+
+    <!-- PRODUCTO 2 -->
+    <article class="producto">
+
+        <div class="producto-imagen">
+            <img src="blusa2.jpeg" alt="Blusa Rose">
+            <span>BLUSA</span>
+        </div>
+
+        <div class="producto-info">
+            <h3>Blusa Rose</h3>
+
+            <p>
+                Blusa moderna y cómoda para diferentes ocasiones.
+            </p>
+
+            <strong>$15.00</strong>
+
+            <br><br>
+
+            <button
+                class="btn-principal"
+                onclick="agregarProducto('Blusa Rose', 15.00)">
+                Agregar
+            </button>
+        </div>
+
+    </article>
+
+
+    <!-- PRODUCTO 3 -->
+    <article class="producto">
+
+        <div class="producto-imagen">
+            <img src="pans.jpeg" alt="Pantalón Classic">
+            <span>PANTALÓN</span>
+        </div>
+
+        <div class="producto-info">
+            <h3>Pantalón Classic</h3>
+
+            <p>
+                Pantalón elegante para combinar con diferentes prendas.
+            </p>
+
+            <strong>$27.00</strong>
+
+            <br><br>
+
+            <button
+                class="btn-principal"
+                onclick="agregarProducto('Pantalón Classic', 27.00)">
+                Agregar
+            </button>
+        </div>
+
+    </article>
+
+
+    <!-- PRODUCTO 4 -->
+    <article class="producto">
+
+        <div class="producto-imagen">
+            <img src="conjunto2.jpeg" alt="Conjunto Chic">
+            <span>CONJUNTO</span>
+        </div>
+
+        <div class="producto-info">
+            <h3>Conjunto Chic</h3>
+
+            <p>
+                Conjunto femenino moderno y versátil.
+            </p>
+
+            <strong>$49.99</strong>
+
+            <br><br>
+
+            <button
+                class="btn-principal"
+                onclick="agregarProducto('Conjunto Chic', 49.99)">
+                Agregar
+            </button>
+        </div>
+
+    </article>
+
+
+    <!-- PRODUCTO 5 -->
+    <article class="producto">
+
+        <div class="producto-imagen">
+            <img src="falda.jpeg" alt="Falda Paris">
+            <span>FALDA</span>
+        </div>
+
+        <div class="producto-info">
+            <h3>Falda Paris</h3>
+
+            <p>
+                Falda elegante para crear diferentes outfits.
+            </p>
+
+            <strong>$24.99</strong>
+
+            <br><br>
+
+            <button
+                class="btn-principal"
+                onclick="agregarProducto('Falda Paris', 24.99)">
+                Agregar
+            </button>
+        </div>
+
+    </article>
+
+
+    <!-- PRODUCTO 6 -->
+    <article class="producto">
+
+        <div class="producto-imagen">
+            <img src="camisa2.jpeg" alt="Camisa Soft">
+            <span>CAMISA</span>
+        </div>
+
+        <div class="producto-info">
+            <h3>Camisa Soft</h3>
+
+            <p>
+                Camisa cómoda con un estilo femenino y moderno.
+            </p>
+
+            <strong>$21.99</strong>
+
+            <br><br>
+
+            <button
+                class="btn-principal"
+                onclick="agregarProducto('Camisa Soft', 21.99)">
+                Agregar
+            </button>
+        </div>
+
+    </article>
+
+</div>
+
+
+<!-- ESTILO PARA LAS IMÁGENES -->
+
+<style>
+
+.producto-imagen {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.producto-imagen span {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: #7A3048;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+</style>
+</section>
+
+
+<section class="tecnologias">
+
+<div class="titulo-seccion">
+
+<p>CARRITO</p>
+
+<h2>Mis productos</h2>
+
+</div>
+
+
+<div class="logo-grande">
+
+<div id="carrito">
+
+<p>
+Tu carrito está vacío.
+</p>
+
+</div>
+
+
+<h2 id="total">
+Total: $0.00
+</h2>
+
+
+<button
+class="btn-secundario"
+onclick="vaciarCarrito()">
+
+Vaciar carrito
+
+</button>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-logo">
+
+<h2>NICOLE FASHION</h2>
+
+<p>
+Tu estilo, tu esencia.
+</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<h3>Enlaces</h3>
+
+<a href="index.html">Inicio</a>
+
+<a href="productos.html">
+Productos
+</a>
+
+<a href="cuestionario.html">
+Cuestionario
+</a>
+
+<a href="contacto.html">
+Contacto
+</a>
+
+</div>
+
+
+<div class="footer-links">
+
+<h3>Investigación</h3>
+
+<a href="javascript.html">
+JavaScript
+</a>
+
+<a href="jquery.html">
+jQuery
+</a>
+
+<a href="json.html">
+JSON
+</a>
+
+<a href="hosting.html">
+Hosting
+</a>
+
+</div>
+
+
+<div class="footer-info">
+
+<h3>NICOLE FASHION</h3>
+
+<p>
+Moda femenina.
+</p>
+
+<p>
+Estilo y elegancia.
+</p>
+
+</div>
+
+</footer>
+
+
+<div class="copyright">
+
+© 2026 NICOLE FASHION | Proyecto académico
+
+</div>
+
+
+<script>
+
+let carrito = [];
+
+
+function agregarProducto(nombre, precio) {
+
+carrito.push({
+
+nombre: nombre,
+
+precio: precio
+
+});
+
+mostrarCarrito();
+
+alert(
+nombre +
+" fue agregado al carrito."
+);
+
+}
+
+
+function mostrarCarrito() {
+
+const contenedor =
+document.getElementById("carrito");
+
+const totalElemento =
+document.getElementById("total");
+
+
+if (carrito.length === 0) {
+
+contenedor.innerHTML =
+"<p>Tu carrito está vacío.</p>";
+
+totalElemento.innerHTML =
+"Total: $0.00";
+
+return;
+
+}
+
+
+let html = "";
+
+let total = 0;
+
+
+carrito.forEach(function(producto, indice) {
+
+html += `
+
+<p>
+
+<strong>
+${producto.nombre}
+</strong>
+
+-
+$${producto.precio.toFixed(2)}
+
+<button
+onclick="eliminarProducto(${indice})"
+style="
+margin-left:10px;
+border:none;
+background:#7A3048;
+color:white;
+padding:5px 10px;
+border-radius:10px;
+cursor:pointer;
+">
+
+X
+
+</button>
+
+</p>
+
+`;
+
+total += producto.precio;
+
+});
+
+
+contenedor.innerHTML = html;
+
+totalElemento.innerHTML =
+"Total: $" + total.toFixed(2);
+
+}
+
+
+function eliminarProducto(indice) {
+
+carrito.splice(indice, 1);
+
+mostrarCarrito();
+
+}
+
+
+function vaciarCarrito() {
+
+carrito = [];
+
+mostrarCarrito();
+
+}
+
+</script>
+
+
+</body>
+</html>

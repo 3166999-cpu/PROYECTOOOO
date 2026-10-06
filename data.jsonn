@@ -1,0 +1,6 @@
+[
+  {"id":1,"nombre":"VINO DRESS","precio":189,"categoria":"ropa","accesorios":["BAG MINI VINO","GOLD HOOPS"]},
+  {"id":2,"nombre":"BAG MINI VINO","precio":98,"categoria":"bolsos"},
+  {"id":3,"nombre":"BELT DORADO","precio":45,"categoria":"joyeria"},
+  {"id":4,"nombre":"HEELS VINO","precio":155,"categoria":"otros"}
+]
